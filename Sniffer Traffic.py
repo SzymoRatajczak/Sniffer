@@ -60,7 +60,7 @@ def get_Mac(data):
 
 #Up to this point we were handling Ethernet frame-communctaion with router
 #from now we are handling communciation via IP- communication with e.g server which is put somwhere in the internet and so on so forth
-
+#if entire IP packet is too big , it will be divided into smaller packets and reunited at the end station
 def ipv4_unpack(data):
     version=data[0]#data[0] consists of version and header length  so i shift this one with 4 bits to dissect merely version
 
